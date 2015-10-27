@@ -4,7 +4,6 @@ O objeto do projeto é captar um sequência de números a ser informada pelo usu
 
 Ex: 123456789
 
-
  -    --   --  |  |  --   --  ---   --   --  
   |     |    | |  | |    |       | |  | |  | 
   |   --   --   --   --   --     |  --   --  
