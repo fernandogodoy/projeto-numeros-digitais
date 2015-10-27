@@ -4,10 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import aula.numeros.ListNumeros;
+import aula.numeros.Numero;
+import aula.util.Constants;
+
 /**
  * Classe que responsável pela impressão do número no formato dígital
  */
 public class Monitor {
+	
+	Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
 		Monitor monitor = new Monitor();
@@ -18,7 +24,7 @@ public class Monitor {
 			for (char c : numerosDigitados) {
 				Integer numero = monitor.converteCharEmInteiro(c);
 				if (numero != null)
-					numeros.add(Numeros.getNumero(numero));
+					numeros.add(ListNumeros.getNumero(numero));
 			}
 			monitor.escreverNumerosDigitais(numeros);
 		}
@@ -82,7 +88,6 @@ public class Monitor {
 	 * @return Array contendo um char para cada número digitado
 	 */
 	private char[] getNumerosDigitados() {
-		Scanner sc = new Scanner(System.in);
 		System.out.println("Digite um número: ");
 		String valor = sc.next();
 		return valor.toCharArray();
