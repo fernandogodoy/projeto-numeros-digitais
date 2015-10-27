@@ -1,6 +1,6 @@
-Projeto desenvolvido em sala de aula com intuíto de apresentar alguns conceitos de Java.
+Projeto desenvolvido em sala de aula com intuÃ­to de apresentar alguns conceitos de Java.
 
-O objeto do projeto é captar um sequência de números a ser informada pelo usuário e imprimir tais números no formato digital
+O objeto do projeto Ã© captar um sequÃªncia de nÃºmeros a ser informada pelo usuÃ¡rio e imprimir tais nÃºmeros no formato digital
 
 Ex: 123456789
 
@@ -9,4 +9,15 @@ Ex: 123456789
   |   --   --   --   --   --     |  --   --  
   |  |       |    |    | |  |    | |  |    | 
  ---  --   --     |  --   --     |  --   --  
+
+
+
+
+
+
+
+
+
+
+
 
