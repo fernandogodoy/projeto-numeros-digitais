@@ -1,29 +1,31 @@
 package aula.numeros;
 
-public class Numero8 implements Numero {
+import aula.util.Constants;
+
+public class Numero8 extends Constants implements Numero {
 
 	@Override
-	public String getPrimeira() {
-		return " -- ";
+	public StringBuilder getPrimeira() {
+		return espacoTracoTracoEspaco();
 	}
 
 	@Override
-	public String getSegundaLinha() {
-		return "|  |";
+	public StringBuilder getSegundaLinha() {
+		return pipeEspacoEspacoPipe();
 	}
 
 	@Override
-	public String getTerceira() {
-		return " -- ";
+	public StringBuilder getTerceira() {
+		return espacoTracoTracoEspaco();
 	}
 
 	@Override
-	public String getQuartaLinha() {
-		return "|  |";
+	public StringBuilder getQuartaLinha() {
+		return pipeEspacoEspacoPipe();
 	}
 
 	@Override
-	public String getQuintaLinha() {
-		return " -- ";
+	public StringBuilder getQuintaLinha() {
+		return espacoTracoTracoEspaco();
 	}
 }

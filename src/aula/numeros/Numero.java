@@ -3,42 +3,45 @@ package aula.numeros;
 /**
  * 
  * Define os métodos necesários para a impressão dos números no formato digital
+ * Cada numero será representado por 4 linhas e 5 colunas
  */
 public interface Numero {
+	
+	StringBuilder SB = new StringBuilder();
 
 	/**
 	 * Texto da primeira linha
 	 * 
 	 * @return Texto a ser impresso
 	 */
-	String getPrimeira();
+	StringBuilder getPrimeira();
 
 	/**
 	 * Texto da segunda linha
 	 * 
 	 * @return Texto a ser impresso
 	 */
-	String getSegundaLinha();
+	StringBuilder getSegundaLinha();
 
 	/**
 	 * Texto da terceira linha
 	 * 
 	 * @return Texto a ser impresso
 	 */
-	String getTerceira();
+	StringBuilder getTerceira();
 
 	/**
 	 * Texto da quarta linha
 	 * 
 	 * @return Texto a ser impresso
 	 */
-	String getQuartaLinha();
+	StringBuilder getQuartaLinha();
 
 	/**
 	 * Texto da quinta linha
 	 * 
 	 * @return Texto a ser impresso
 	 */
-	String getQuintaLinha();
+	StringBuilder getQuintaLinha();
 
 }

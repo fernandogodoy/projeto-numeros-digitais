@@ -12,12 +12,11 @@ import aula.util.Constants;
  * Classe que responsável pela impressão do número no formato dígital
  */
 public class Monitor {
-	
-	Scanner sc = new Scanner(System.in);
 
+	Scanner sc = new Scanner(System.in);
+	
 	public static void main(String[] args) {
 		Monitor monitor = new Monitor();
-
 		for (int x = 0; x < 10; x++) {
 			List<Numero> numeros = new ArrayList<>();
 			char[] numerosDigitados = monitor.getNumerosDigitados();
@@ -30,6 +29,7 @@ public class Monitor {
 		}
 	}
 
+
 	/**
 	 * Método responsável por executar a escrita dos número no formato dígital
 	 */
@@ -37,8 +37,7 @@ public class Monitor {
 		StringBuilder sb = new StringBuilder();
 		for (int numeroLinha = 1; numeroLinha <= 5; numeroLinha++) {
 			for (Numero num : numeros) {
-				sb.append(printLine(num, numeroLinha));
-				sb.append(Constants.STRING_VAZIA);
+				 sb = printLine(num, numeroLinha).append(Constants.ESPACO);
 			}
 			sb.append(Constants.QUEBRA_LINHA);
 		}
@@ -50,7 +49,7 @@ public class Monitor {
 	 * 
 	 * @return Texto existente em cada linha a ser impressa
 	 */
-	private String printLine(Numero numero, Integer linha) {
+	private StringBuilder printLine(Numero numero, Integer linha) {
 		switch (linha) {
 		case 1:
 			return numero.getPrimeira();
@@ -62,8 +61,9 @@ public class Monitor {
 			return numero.getQuartaLinha();
 		case 5:
 			return numero.getQuintaLinha();
+		default:
+			return null;
 		}
-		return "Não existe uma linha a ser impressa para este numero";
 
 	}
 
